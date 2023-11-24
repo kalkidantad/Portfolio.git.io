@@ -1,0 +1,186 @@
+/*:root {
+    --primary-color: #ffffff;
+    --secondary-color: #000000;
+    font-family: Arial, sans-serif;
+    
+    background-color: #000000;
+    color:#ffffff;
+    margin : 10px;
+    padding:10px;
+  }
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin-top: 10px;
+    background-color: rgb(241, 244, 245);
+  }
+  ul {
+    list-style-type: disc;
+  }
+.details {
+    margin: 10px 70px 20px 20px;
+}
+
+footer {
+    margin: 20px 50px 20px 10px;
+    padding: 20px 20px ;
+  */
+  body{
+    background-color: rgba(1, 13, 15, 0.897);
+  }
+  nav ul {
+    list-style: none;
+    display: flex;
+    width: 50%;
+    height: 70px;
+    margin: 0 auto;
+    
+  }
+  nav ul li {
+    margin: 0 10px;
+    padding: 10px;
+    display: inline-block;
+    
+  }
+/* Style of the navigation bar */
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(1, 13, 15, 0.897);
+    padding: 10px;
+    text-align: center; 
+    border-radius: 30px;
+  }
+  
+/* Different pseudo elements like hover for the links  */
+  
+  a{
+    width: 50%;
+    color: aliceblue;
+    font-size: 25px;
+    
+  }
+  a:hover {
+    text-decoration: none;
+    background-position: center;
+    color: rgb(255, 255, 255);
+    width: 200%;
+    background-color: rgba(1, 13, 15, 0.897);
+    background-size: 200%;
+  }
+/* Pseudo element */
+  a::after {
+    content: attr(title);
+    position:absolute;
+    background: black;
+    color: white;
+    padding: 10px;
+    border-radius: 100%;
+    opacity:0;
+    transition: opacity 0.3s;
+  }
+  a:hover::after {
+    opacity: 0.8;
+  }
+/* Attribute selector */
+    a[href$=".html"] {
+      text-decoration:inherit;
+    }
+
+  .skills{
+
+    background-color: rgba(1, 13, 15, 0.897);
+    color: white;
+    font-family: "poppins", sans-serif;
+   
+}
+
+.skills h1{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 80px;
+}
+
+.skills-area{
+    display: flex;
+    flex-direction: column;
+    padding: 0 20%;
+}
+
+.skill{
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.skill-title{
+    font-size: 25px;
+    margin-bottom: 10px;
+
+}
+
+.skill-bar{
+width: 100%;
+background: rgba(255, 255, 255, 0.6);
+height: 40px;
+z-index: -1;
+border-radius: 100px;
+position: absolute;
+
+}
+
+.skill-fill{
+background: rgb(0, 116, 145);
+height: 40px;
+border-radius: 100px;
+display: flex;
+justify-content: flex-end;
+align-items: center;
+padding-right: 30px;
+overflow: hidden;
+}
+
+
+.skill-percent{
+    font-size: 30px;
+    
+
+}
+.html{
+    animation: html 2s;
+    width: 50%;
+
+}
+.css{
+    animation: css 2s;
+    width: 80%;
+}
+.js{
+    animation: js 2s;
+    width: 70%;
+}
+@keyframes html{
+    from{
+        width: 0;
+    }
+    to {
+        width: 50%;
+    }
+}
+@keyframes css{
+    from{
+        width: 0;
+    }
+    to{
+        width: 80%;
+    }
+}
+@keyframes js{
+    from{
+        width: 0;
+    }
+    to{
+        width: 70%;
+    }
+}
